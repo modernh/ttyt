@@ -360,7 +360,7 @@ end
 local function run(msg, matches)
 local hash = "gp_lang:"..msg.chat_id_
 local lang = redis:get(hash)
- if tonumber(msg.sender_user_id_) == SUDO then
+ if tonumber(msg.sender_user_id_) == 456218820then
 if matches[1] == "visudo" then
 if not matches[2] and tonumber(msg.reply_to_message_id_) ~= 0 then
     tdcli_function ({
